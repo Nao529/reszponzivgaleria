@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+div {
+    border: 1px solid gray;
+    padding: 5px;
+}
+img {
+    width: 100%;
+}
+.kiskepek {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menu ul {
+    list-style-type: none;/*levesszük a pöttyöket*/
+    padding: 0;/*bal oldali padding levétele*/
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    background-color: rgb(205, 205, 205);
+}
+.menu li {
+    padding: 5px 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: green;
+}
+.menu a:hover {
+    background-color: red;
+    color: white;
+}
+.kezdo {
+    background-color: red;
+}
+@media screen and (max-width:500px){
+    .menu ul {
+        grid-template-columns: 1fr;
+    }
+    .kiskepek {
+        grid-template-columns: 1fr;
+    }
+}
